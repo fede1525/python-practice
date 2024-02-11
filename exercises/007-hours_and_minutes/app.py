@@ -1,6 +1,8 @@
-def hours_minutes(seconds):
-  # Your code here
-  return None
+import math
 
-# Invoke the function and pass any integer as its argument
+def hours_minutes(seconds):
+    hours = math.ceil(seconds/3600)
+    minutes = math.ceil(seconds/60 % 60)
+    return  str(hours) + ":" + str(minutes).zfill(2)
+
 print(hours_minutes(3900))

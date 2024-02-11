@@ -1,4 +1,4 @@
 def square(num):
-    return None
+    return num * num
 
 print(square(6))
