@@ -1,7 +1,10 @@
 # Complete the function to return the amount of days it will take to cover a route
+import math
+
 def car_route(n,m):
-  return None
+    days = int(math.ceil(m / n))
+    return days
 
 
 # Invoke the function with two integers
-print(car_route())
+print(car_route(6, 24))
