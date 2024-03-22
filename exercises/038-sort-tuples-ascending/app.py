@@ -1,3 +1,6 @@
 from operator import itemgetter
 
-# Your code here
+def sort_tuples_ascending(data):
+
+    return sorted(data, key=itemgetter(0, 1, 2))
+
